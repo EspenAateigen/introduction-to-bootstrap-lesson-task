@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bootstrap</title>
+        <title>Products</title>
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -32,11 +32,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html">Products</a>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -48,44 +48,47 @@
                 </div>
             </nav>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner embed-responsive embed-responsive-21by9">
-                    <div class="carousel-item active embed-responsive-item" style="background-image: url(images/slider-1.jpg);"></div>
-                    <div class="carousel-item embed-responsive-item" style="background-image: url(images/slider-2.jpg);"></div>
-                    <div class="carousel-item embed-responsive-item" style="background-image: url(images/slider-3.jpg);"></div>
-                </div>
-            </div>
-
             <div class="container">
-                <h1 class="home">SERIOUSLY, BUY MORE THINGS</h1>
-                <div class="row">
-                    <div class="col-md home-block">
-                        <h3>Heading</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                        <a href="products.html" class="btn btn-primary">View more</a>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product One</li>
+                    </ol>
+                </nav>
+
+                <div class="product-top">
+                    <h1>Product One</h1>
+
+                    <div class="tags">
+                        <span class="badge badge-light">Tag 1</span>
+                        <span class="badge badge-light">Tag 2</span>
+                        <span class="badge badge-light">Tag 3</span>
                     </div>
-                    <div class="col-md home-block">
-                        <h3>Heading</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat efficitur eleifend. Etiam sit amet turpis dolor. Maecenas facilisis semper est sit amet facilisis.
-                            Aliquam turpis enim, euismod in tincidunt non, dapibus quis dolor.
-                        </p>
-                        <a href="products.html" class="btn btn-primary">View more</a>
+                </div>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <div class="embed-responsive-item product-detail-image" style="background-image: url(images/products/product-detail.jpg);">
+                    <div class="product-detail-caption">This is a modified jumbotron that occupies the entire horizontal spave of its parent.</div>
                     </div>
-                    <div class="col-md home-block">
-                        <h3>Heading</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat efficitur eleifend. Etiam sit amet turpis dolor. Maecenas facilisis semper est sit amet facilisis.
-                            Aliquam turpis enim, euismod in tincidunt non, dapibus quis dolor.
-                        </p>
-                        <a href="products.html" class="btn btn-primary">View more</a>
+                </div>
+                <div class="product-content">
+                    <div class="row">
+                        <div class="col-md">
+                            <h2>Sed tincidunt phatera nulla</h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, doloribus sequi? Veniam placeat odio alias voluptatum obcaecati doloribus earum. Accusantium alias eum nemo
+                                ullam possimus, repellendus odit earum corrupti, exercitationem autem rem rerum temporibus, quibusdam quod commodi sit quam? Magnam.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorem possimus repellendus excepturi, voluptas tempora!
+                            </p>
+                        </div>
+                        <div class="col-md">
+                            <ul class="product-list">
+                                <li><i class="fa fa-tag"></i> Nullam consequat vulputate mi.</li>
+                                <li><i class="fa fa-rocket"></i> Donec eget condimentum mauris. In hac habitasse.</li>
+                                <li><i class="fa fa-adjust"></i>Etiam facilisis ut urna.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
